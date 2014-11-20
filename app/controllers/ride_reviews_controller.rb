@@ -1,12 +1,20 @@
 class RideReviewsController < ApplicationController
 
   def new
+    @user = User.find(params[:user_id])
     @ride_review = RideReview.new
   end
 
-  def create
+  def search
     @user = User.find(params[:user_id])
-    @ride_review = @user.ride_reviews.create(ride_review_params )
+    @driver = Driver.find_by(:medallion_number => params[:medallion_number])
+    @ride_review = RideReview.new
+    render 'new'
+  end
+
+  def create
+    @user = User.find(params[:id])
+    @ride_review = @user.ride_reviews.create(ride_review_params)
     redirect_to @ride_review
   end
 

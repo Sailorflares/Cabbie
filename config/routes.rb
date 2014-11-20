@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
-  root 'users#show'
+  root 'users#index'
+
+  post '/users/:user_id/ride_reviews/search' => 'ride_reviews#search', as: :medallion_search
 
   resources :users do
     resources :ride_reviews, only: [:new, :create, :show]
   end
+
+  resources :drivers, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
