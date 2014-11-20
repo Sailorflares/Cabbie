@@ -26,10 +26,8 @@ ActiveRecord::Schema.define(version: 20141119205307) do
   end
 
   create_table "drivers", force: true do |t|
-    t.string   "license_no"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "medallion_number"
+    t.string "driver_name"
   end
 
   create_table "rides", force: true do |t|
