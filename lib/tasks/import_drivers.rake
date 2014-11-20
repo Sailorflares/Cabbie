@@ -16,3 +16,5 @@ namespace :csv do
     end
   end
 end
+
+# 'rake csv:import_drivers' => to run this rake task

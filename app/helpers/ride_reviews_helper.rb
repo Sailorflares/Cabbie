@@ -1,0 +1,2 @@
+module RideReviewsHelper
+end

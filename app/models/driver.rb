@@ -1,5 +1,4 @@
 class Driver < ActiveRecord::Base
-  has_many :rides
-  has_many :users, through: :rides
-  has_many :ratings, through: :rides
+  has_many :ride_reviews
+  has_many :users, through: :ride_reviews
 end
