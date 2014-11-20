@@ -1,9 +1,20 @@
-new.html.erb
+<h2>Driver:</h2>
+<h4><%= @driver.driver_name %></h4>
+<% @driver.ride_reviews.each do |rev| %>
+  User: <h5><%= rev.user.name %></h5>
+  Stars: <p><%= rev.star_rating %></p>
+  Comments: <p><%= rev.comments %></p>
+<% end %>
 
-<h2><%= @user.name %></h2>
 
 
-<h2><%= @driver.driver_name %></h2>
+<h3>How was your experience</h3>
+<%= form_for([@user, RideReview.new]) do |f| %>
+  <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => true%></p>
+  <p><%= f.text_field :comments, :placeholder => "Add a comment"%></p>
+     <%= f.hidden_field :driver_id, :value => @driver.id %>
+  <p><%= f.submit %></p>
+<% end %>
 
 
 <%#= link_to "Ride Review show page", user_ride_review_path(@user) %>

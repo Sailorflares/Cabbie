@@ -13,9 +13,12 @@ class RideReviewsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:id])
+    # raise params.inspect
+    @user = User.find(params[:user_id])
+    @driver = Driver.find(params[:ride_review][:driver_id])
     @ride_review = @user.ride_reviews.create(ride_review_params)
-    redirect_to @ride_review
+    # binding.
+    redirect_to driver_path(@driver)
   end
 
   def show
@@ -25,7 +28,7 @@ class RideReviewsController < ApplicationController
   private
 
   def ride_review_params
-    params.require(:ride_review).permit(:driver_id, :star_rating, :comments)
+    params.require(:ride_review).permit(:star_rating, :comments, :driver_id)
   end
 
 end
