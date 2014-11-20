@@ -11,42 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141119205307) do
-
-  create_table "cabs", force: true do |t|
-    t.string   "medallion_no"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "companies", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20141119205241) do
 
   create_table "drivers", force: true do |t|
-    t.string "medallion_number"
-    t.string "driver_name"
+    t.string   "medallion_number"
+    t.string   "driver_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
-  create_table "rides", force: true do |t|
-    t.integer  "cab_id"
+  create_table "ridereviews", force: true do |t|
     t.integer  "driver_id"
     t.integer  "user_id"
+    t.integer  "rating"
+    t.string   "review"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "violations", force: true do |t|
-    t.integer  "driver_id"
-    t.string   "violation_no"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
