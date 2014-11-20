@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
+  root 'users#show'
 
   resources :users do
     resources :ride_reviews, only: [:new, :create, :show]
