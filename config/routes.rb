@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
-  post '/users/:user_id/ride_reviews/search' => 'ride_reviews#search', as: :medallion_search
+  post '/drivers' => 'drivers#search', as: :medallion_search
 
   resources :users do
     resources :ride_reviews, only: [:new, :create, :show]

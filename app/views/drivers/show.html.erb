@@ -1,2 +1,44 @@
-<h1><%= @driver.driver_name %></h1>  
+<div class="container">
+  <h1><%= @driver.formatted_name %></h1><br>
+  <h3>Average Rating: </h3>
+  <h3>Number of Reviews: <%= @driver.ride_reviews.size %></h3>
+</div>
 
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" style="margin:50px;">
+      <h2>Reviews for <%= @driver.formatted_name %>:</h2><br>
+      <% @driver.ride_reviews.reverse.each do |rev| %>
+        <h5><%= rev.user.name %> <%= rev.created_at.localtime.strftime("at %I:%M%p on %m/%d/%Y") %></h5>
+        <p>Rating: <%= rev.star_rating %></p>
+        <p>Review: <%= rev.comments %></p>
+      <% end %>
+    </div>
+
+    <div class="col-md-3" style="margin: 50px;">
+      <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br>
+      <%#= form_tag(user_ride_reviews_path(@user), method: 'post') do %>
+        <%#= label_tag('ride_review[star_rating]', "Star Rating") %>
+        <%#= number_field_tag('ride_review[star_rating]') %>
+        <%#= label_tag('ride_review[comments]', "comments") %>
+        <%#= text_field_tag('ride_review[comments]') %>
+        <%#= hidden_field 'ride_review[driver_id]', :value => @driver.id %>
+        <%#= hidden_field 'ride_review[user_id]', :value => @user.id %>
+        <%#= submit_tag 'Submit Review' %>
+      <%# end %>  
+      <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
+          <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
+          <p><%= f.text_field(:comments, :placeholder => "Add a comment", :class => "form-control", :rows => 3)%></p>
+             <%= f.hidden_field :driver_id, :value => @driver.id %>
+        <p><%= f.submit 'Submit review!' %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<%#= link_to "Ride Review show page", user_ride_review_path(@user) %>

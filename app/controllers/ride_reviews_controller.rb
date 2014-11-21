@@ -7,15 +7,9 @@ class RideReviewsController < ApplicationController
     @ride_review = RideReview.new
   end
 
-  def search
-    @user = User.find(params[:user_id])
-    @driver = Driver.find_by(:medallion_number => params[:medallion_number])
-    @ride_review = RideReview.new
-    render 'new'
-  end
-
   def create
     # raise params.inspect
+    binding.pry
     @user = User.find(params[:user_id])
     @driver = Driver.find(params[:ride_review][:driver_id])
     @ride_review = @user.ride_reviews.create(ride_review_params)
