@@ -7,4 +7,8 @@ class Driver < ActiveRecord::Base
   #   Driver.find_by(:medallion_number => medallion_number)
   # end
 
+  def formatted_name
+    driver_name.split(',').reverse.join(' ')
+  end
+
 end
