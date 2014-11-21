@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :authorize, only: [:show]
   def index
     @users = User.all
   end
@@ -9,8 +9,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    redirect_to @user
+    @user = User.new(user_params)
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to root_path, :notice => "Hi #{@user.name}. Thank you for signing up!"
+    else
+      render :new
+    end
   end
 
   def show
@@ -20,7 +25,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
 end
