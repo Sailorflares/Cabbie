@@ -1,0 +1,8 @@
+<% if !user_signed_in? %>
+  <%= link_to "Sign Up", signup_path %> |
+  <%= link_to "Log In", '/login' %> 
+<% else %>
+  <%= "Hello, #{current_user.name}" %>
+  <%#= link_to "Hack my Ride!", medallion_search_path %> |
+  <%= link_to "Log Out", '/logout' %>
+<% end %>

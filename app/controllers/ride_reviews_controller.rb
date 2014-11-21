@@ -1,5 +1,7 @@
 class RideReviewsController < ApplicationController
 
+  before_action :authorize, only: [:new, :create]
+
   def new
     @user = User.find(params[:user_id])
     @ride_review = RideReview.new

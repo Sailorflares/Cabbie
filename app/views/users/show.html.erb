@@ -1,12 +1,12 @@
-<h2>Welcome, <%= @user.name %>!</h2>
+<h2>Welcome, <%#= @user.name %>!</h2>
 
 <h3>Hack your ride by typing in your cab's medallion number</h3>
 
 
 
-<%= form_tag(medallion_search_path(@user), method: "post") do %>
-  <%= label_tag(:medallion_number, "medallion number") %>
-  <%= text_field_tag(:medallion_number) %>
-  <%= submit_tag("Search") %>
-<% end %>
+<%#= form_tag(medallion_search_path(@user), method: "post") do %>
+  <%#= label_tag(:medallion_number, "medallion number") %>
+  <%#= text_field_tag(:medallion_number) %>
+  <%#= submit_tag("Search") %>
+<%# end %>
 
