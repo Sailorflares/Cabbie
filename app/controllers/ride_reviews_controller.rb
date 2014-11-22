@@ -12,10 +12,10 @@ class RideReviewsController < ApplicationController
     @driver = Driver.find(params[:ride_review][:driver_id])
     @ride_review = @user.ride_reviews.create(ride_review_params)
 
-    if @ride_review
-      redirect_to driver_path(@driver)
+    if @ride_review.errors
+      redirect_to driver_path(@driver), notice: "Please give your driver a rating and a review of at least 10 characters."
     else
-      flash.now.notice = "Please give your driver a rating and a review of at least 10 characters."
+      redirect_to driver_path(@driver)
     end
   end
 
