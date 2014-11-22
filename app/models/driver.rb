@@ -6,6 +6,10 @@ class Driver < ActiveRecord::Base
     driver_name.split(',').reverse.join(' ')
   end
 
+  def average_rating
+    ride_reviews.average("star_rating").to_f.round(1)
+  end
+
   # def self.search(medallion_number)
   #   Driver.find_by(:medallion_number => medallion_number)
   # end
