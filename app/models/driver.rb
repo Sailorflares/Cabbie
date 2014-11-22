@@ -10,8 +10,4 @@ class Driver < ActiveRecord::Base
     ride_reviews.average("star_rating").to_f.round(1)
   end
 
-  # def self.search(medallion_number)
-  #   Driver.find_by(:medallion_number => medallion_number)
-  # end
-
 end

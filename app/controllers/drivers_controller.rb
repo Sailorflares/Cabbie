@@ -10,7 +10,12 @@ class DriversController < ApplicationController
 
   def search
     @driver = Driver.find_by(:medallion_number => params[:medallion_number])
-    redirect_to driver_path(@driver)
+    if @driver
+      redirect_to driver_path(@driver)
+    else
+      redirect_to root_path
+      flash.now[:error] = "Could not save client"
+    end
   end
 
 end
