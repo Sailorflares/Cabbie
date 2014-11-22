@@ -41437,3 +41437,2560 @@ Processing by DriversController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 11]]
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 282ms (Views: 278.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 15:52:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (1.9ms)
+  Rendered sessions/new.html.erb within layouts/application (18.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 3643ms (Views: 3635.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:05 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:06 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:06 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:06 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"qw@ag.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'qw@ag.com' LIMIT 1
+  Rendered sessions/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 164ms (Views: 154.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:22 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '' LIMIT 1[0m
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 158ms (Views: 156.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:52:24 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '' LIMIT 1
+  Rendered sessions/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:52:25 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '' LIMIT 1[0m
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 161.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:52:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = '' LIMIT 1
+  Rendered sessions/_form.html.erb (0.7ms)
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 150ms (Views: 148.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:52:27 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"a@a.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'a@a.com' LIMIT 1[0m
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 162ms (Views: 157.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:44 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (43.7ms)
+  Rendered users/new.html.erb within layouts/application (44.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 192ms (Views: 190.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:53:56 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 15:53:58 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.8ms)
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 139ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:54:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"a@a.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'a@a.com' LIMIT 1
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 162ms (Views: 154.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:43 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = '' LIMIT 1[0m
+  Rendered sessions/_form.html.erb (0.4ms)
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 150.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:54:44 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CVwl8rewENWkDT2CkGMW1tuN5EIsTOUbOIR8Isgwf3M=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 150ms (Views: 149.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:55:42 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 15:56:20 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 15:56:20 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 15:56:23 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 145ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FlUlrNG/8H1RNZEVDI9ARXMxnLXXKbcm3/CsD4LGLwk=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 149ms (Views: 148.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 15:56:49 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 15:56:54 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 15:56:54 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 16:00:18 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 168ms (Views: 167.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZePd4eiCMFWi5LL0D1BqnVTkN6FEJbOPeQwSdS9Y3ls=", "email"=>"a@a.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'a@a.com' LIMIT 1
+  Rendered sessions/_form.html.erb (0.7ms)
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 153ms (Views: 151.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:23 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:00:24 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZePd4eiCMFWi5LL0D1BqnVTkN6FEJbOPeQwSdS9Y3ls=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 147ms (Views: 146.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:02:53 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:02:56 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:02:56 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 158ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 16:03:27 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 148ms (Views: 147.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 16:03:34 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EdwKCpRKOLzo8tTAKF1md5ryRl+f5jtIsUapMz2ZaWQ=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:03:35 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:01 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:01 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70288147987080/variables" for 127.0.0.1 at 2014-11-22 16:04:01 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:22 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:22 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70288139816160/variables" for 127.0.0.1 at 2014-11-22 16:04:22 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 151ms (Views: 146.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:24 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:26 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:26 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70288148211020/variables" for 127.0.0.1 at 2014-11-22 16:04:26 -0500
+
+
+Started POST "/__better_errors/70288148211020/variables" for 127.0.0.1 at 2014-11-22 16:04:28 -0500
+
+
+Started POST "/__better_errors/70288148211020/variables" for 127.0.0.1 at 2014-11-22 16:04:29 -0500
+
+
+Started POST "/__better_errors/70288148211020/variables" for 127.0.0.1 at 2014-11-22 16:04:30 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:04:45 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:04:45 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 158ms (Views: 154.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:46 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 16:04:48 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 154ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 16:04:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4+5S3QPZumHMwGBLrcKgm+9j6tn3XM/Ufsj/HeiLSgM=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 67ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:04:56 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:04:57 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:05:12 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:05:12 -0500
+
+SyntaxError - /Users/josephcardarelli/flatiron/project_mode/Cabbie/app/controllers/sessions_controller.rb:11: syntax error, unexpected keyword_else:
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/josephcardarelli/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70288105817180/variables" for 127.0.0.1 at 2014-11-22 16:05:12 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 152ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:25 -0500
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-22 16:05:27 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (0.5ms)
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VJReUQpvA7CLJu1iUpsYF7UfK5/K/n+gzzPrwBOKurc=", "email"=>"funkychicken88@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'funkychicken88@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/ratings.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/ride_reviews.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/drivers.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/ratings.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/ride_reviews.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-22 16:05:33 -0500
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-22 16:05:35 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-22 16:05:35 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 149ms (Views: 148.4ms | ActiveRecord: 0.0ms)
