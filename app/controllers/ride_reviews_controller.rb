@@ -8,12 +8,9 @@ class RideReviewsController < ApplicationController
   end
 
   def create
-    # raise params.inspect
-    binding.pry
-    @user = User.find(params[:user_id])
+    @user = User.find(session[:user_id])
     @driver = Driver.find(params[:ride_review][:driver_id])
     @ride_review = @user.ride_reviews.create(ride_review_params)
-    # binding.
     redirect_to driver_path(@driver)
   end
 
