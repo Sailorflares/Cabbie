@@ -13,8 +13,7 @@ class DriversController < ApplicationController
     if @driver
       redirect_to driver_path(@driver)
     else
-      redirect_to root_path
-      flash.now[:error] = "Could not save client"
+      redirect_to root_path, notice: "That isn't a valid medallion number!"
     end
   end
 
