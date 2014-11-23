@@ -1,9 +1,17 @@
-<h2> Sign In </h2>
-
-<%= form_tag sessions_path %>
-  <%= label_tag :email %>
-  <%= email_field_tag :email %>
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-<p><%= submit_tag "Log In" %></p>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <%= form_tag sessions_path, :class => 'form-signin', :role => "form" %>
+      <h2 class ="form-signin-heading"> Log In: </h2>
+        <%= label_tag :email, nil, class: "sr-only" %>
+        <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email", :autofocus => true %><br>
+        <%= label_tag :password, nil, class: "sr-only" %>
+        <%= password_field_tag :password, nil, class: "form-control", placeholder: "Password" %><br>
+        <%= submit_tag "Log In", :class => "btn btn-lg btn-primary btn-block" %>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div> 
+</div>

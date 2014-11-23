@@ -1,33 +1,47 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
     </div>
-  <% end %>
+    <div class="col-md-6">
+      <%= form_for @user, :html => {:class => "form-sign-in"} do |f| %>
+        <% if @user.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %><br>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %><br>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br>
-    <%= f.password_field :password %><br>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br>
-    <%= f.password_field :password_confirmation %><br>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+            <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <h2 class="form-signin-heading">Sign Up:</h2>
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <div class="field">
+              <%= f.label :name, :class => "sr-only" %>
+              <%= f.text_field :name, :class => "form-control", :placeholder => "Username", :autofocus => true %><br>
+            </div>
+            <div class="field">
+              <%= f.label :email, :class => "sr-only" %>
+              <%= f.text_field :email, :class => "form-control", :placeholder => "Email" %><br>
+            </div>
+            <div class="field">
+              <%= f.label :password, :class => "sr-only" %>
+              <%= f.password_field :password, :class => "form-control", :placeholder => "Password" %><br>
+            </div>
+            <div class="field">
+              <%= f.label :password_confirmation, :class => "sr-only" %>
+              <%= f.password_field :password_confirmation, :class => "form-control", :placeholder => "Password Confirmation" %><br><br>
+              <%= f.submit "Sign me up!", :class => "btn btn-lg btn-primary btn-block" %>
+            </div>
+          </div>
+        </div>
+        <% end %>
+        </div>
+      <div class="col-md-3">
+    </div>
+  </div> 
+</div>
