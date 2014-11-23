@@ -1,11 +1,18 @@
-<% if !user_signed_in? %>
-  <%= link_to "Sign Up", signup_path %> |
-  <%= link_to "Log In", '/login' %> 
-<% else %>
-  <%= "Hello, #{current_user.name}" %>
-  <%#= link_to "Hack my Ride!", medallion_search_path %> |
-  <%= link_to "Log Out", '/logout' %>
-<% end %>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="<%= root_path %>">Home</a></li>
+    <% if !user_signed_in? %>
+      <li role="presentation" class=""><a href="<%= signup_path %>">Sign Up</a></li>
+      <li role="presentation"><a href="/login">Log In</a></li>
+    <% else %>
+      <p class="navbar-text navbar-right"><%= "Hello, #{current_user.name}!" %></p>
+      <li role="presentation"><a href="/logout">Log Out</a></li>
+    <% end %>
+    </ul>
+  </div>
+</nav>
+
 <% if notice %>
   <div class="alert alert-danger" role="alert">
     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

@@ -14,5 +14,23 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*@font-face {
+  font-family: "Track";
+  src: url("/assets/Track.ttf") format("truetype");
+  src: url(/assets/KaushanScript-Regular.otf) format("truetype");
+}
+
+body {
+  font-family: "Track";  
+}*/
+
+body { 
+  padding-top: 50px; 
+}
+
+ul.nav.nav-pills {
+  margin-top: 5px;
+}
