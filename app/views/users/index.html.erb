@@ -1,19 +1,28 @@
 
+        
+            
 <div class="container">
-  <div class="starter-template">
-    <h1>Cabbie</h1>
-    <p class="lead">Helping you hack your cabride.</p>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row well well-lg">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class='splash'>CABBIE</h1>
+            <p class='lead'>Helping you hack your cabride</p>
+            <%= form_tag medallion_search_path, method: 'post', :class => 'input-medium search-query', :role => "form" %>
+            <%= label_tag :medallion_number, nil, class: "sr-only" %>
+            <%= text_field_tag :medallion_number, nil, class: "form-control", placeholder: "Search by your taxi's medallion number to get started" %><br>
+            <%= submit_tag "Search", :class => "btn btn-lg btn-primary btn-block" %>
+        </div>
+      </div>      
+    </div>
   </div>
-  <div class="row">
-    <%= form_tag(medallion_search_path, method: "post") do %>
-      <%= label_tag(:medallion_number, "medallion number") %>
-      <%= text_field_tag(:medallion_number) %>
-      <%= submit_tag("Search") %>
-    <% end %>
-  </div>  
+  
+    <%#= form_tag(medallion_search_path, method: "post", class: 'input-medium search-query') do %>
+      <%#= label_tag(:medallion_number, "Medallion Number") %>
+      <%#= text_field_tag(:medallion_number) %>
+      <%#= submit_tag("Search by Medallion Number") %>
+    <%# end %>
 </div>
 
-<footer class="footer">
-  <p>Made with &#10084; at The Flatiron School</p>
-</footer>
+
 
