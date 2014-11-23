@@ -10,7 +10,7 @@
             <p class='lead'>Helping you hack your cabride</p>
             <%= form_tag medallion_search_path, method: 'post', :class => 'input-medium search-query', :role => "form" %>
             <%= label_tag :medallion_number, nil, class: "sr-only" %>
-            <%= text_field_tag :medallion_number, nil, class: "form-control", placeholder: "Search by your taxi's medallion number to get started" %><br>
+            <%= text_field_tag :medallion_number, nil, class: "form-control", placeholder: "Search by your taxi's medallion number to get started", :autofocus => true %><br>
             <%= submit_tag "Search", :class => "btn btn-lg btn-primary btn-block" %>
         </div>
       </div>      
