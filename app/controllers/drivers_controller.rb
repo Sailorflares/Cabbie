@@ -9,7 +9,7 @@ class DriversController < ApplicationController
   end
 
   def search
-    @driver = Driver.find_by(:medallion_number => params[:medallion_number])
+    @driver = Driver.find_by(:medallion_number => params[:medallion_number].upcase)
     if @driver
       redirect_to driver_path(@driver)
     else
