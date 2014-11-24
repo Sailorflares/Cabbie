@@ -8,10 +8,9 @@ class VotesController < ApplicationController
     @user = User.find(session[:user_id])
     @vote = @user.votes.build(vote_params)
     if @vote.save
-      flash[:notice] = "saved your review of this ride's review reveiweowejaiwej" 
       redirect_to driver_path(@vote.ride_review.driver)
     else
-      flash[:error] = "no one wants to hear your opinion" 
+      flash[:error] = "Sorry, your opinion doesn't seem to matter to anyone." 
       redirect_to driver_path(@vote.ride_review.driver)
     end
   end
@@ -19,7 +18,7 @@ class VotesController < ApplicationController
   private
 
   def vote_params
-    params.require(:vote).permit(:vote, :ride_review_id)
+    params.require(:vote).permit(:value_of_votes, :ride_review_id)
   end
 
 end

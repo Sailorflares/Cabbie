@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20141124154759) do
   create_table "votes", force: true do |t|
     t.integer  "ride_review_id"
     t.integer  "user_id"
-    t.integer  "vote"
+    t.integer  "value_of_votes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
