@@ -2,27 +2,29 @@
         
             
 <div class="container">
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row well well-lg">
-        <div class="col-md-6 col-md-offset-3">
-          <h1 class='splash'>CABBIE</h1>
-            <p class='lead'>Helping you hack your cabride</p>
-            <%= form_tag medallion_search_path, method: 'post', :class => 'input-medium search-query', :role => "form" %>
-            <%= label_tag :medallion_number, nil, class: "sr-only" %>
-            <%= text_field_tag :medallion_number, nil, class: "form-control", placeholder: "Search by your taxi's medallion number to get started", :autofocus => true %><br>
-            <%= submit_tag "Search", :class => "btn btn-lg btn-primary btn-block" %>
-        </div>
-      </div>      
-    </div>
+  <div class='push-jumbo'>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row well well-lg">
+          <div class="col-md-6 col-md-offset-3">
+            <h1 class='splash'>CABBIE</h1>
+              <p class='lead'>Helping you hack your cab ride</p>
+              <%= form_tag medallion_search_path, method: 'post', :class => 'input-medium search-query', :role => "form" %>
+              <%= label_tag :medallion_number, nil, class: "sr-only" %>
+              <%= text_field_tag :medallion_number, nil, class: "form-control", placeholder: "Search by your taxi's medallion number", :autofocus => true %><br>
+              <%= submit_tag "Search", :class => "btn btn-lg btn-primary btn-block" %>
+          </div>
+        </div>      
+      </div>
+    </div>  
   </div>
+</div>
   
     <%#= form_tag(medallion_search_path, method: "post", class: 'input-medium search-query') do %>
       <%#= label_tag(:medallion_number, "Medallion Number") %>
       <%#= text_field_tag(:medallion_number) %>
       <%#= submit_tag("Search by Medallion Number") %>
     <%# end %>
-</div>
 
 
 
