@@ -50,17 +50,19 @@
                     </div>
                     <br>
                     <p>Review: <%= rev.comments %></p>
-                    <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
-                      <%= f.hidden_field :value_of_votes, :value => "1" %>
-                      <%= f.hidden_field :ride_review_id, :value => rev.id %>
-                      <%= f.button "", :class => "glyphicon glyphicon-thumbs-up" %>
-                    <% end %>
-                      <h5><%= rev.votes.map { |vote| vote.value_of_votes }.inject(:+) %></h5>
-                    <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
-                      <%= f.hidden_field :value_of_votes, :value => "-1" %>
-                      <%= f.hidden_field :ride_review_id, :value => rev.id %>
-                      <%= f.button "", :class => "glyphicon glyphicon-thumbs-down" %>
-                    <% end %>
+                    <div class="voting-system">
+                      <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
+                        <%= f.hidden_field :value_of_votes, :value => "1" %>
+                        <%= f.hidden_field :ride_review_id, :value => rev.id %>
+                        <%= f.button "", :class => "glyphicon glyphicon-thumbs-up" %>
+                      <% end %>
+                        <h5><%= rev.votes.map { |vote| vote.value_of_votes }.inject(:+) %></h5>
+                      <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
+                        <%= f.hidden_field :value_of_votes, :value => "-1" %>
+                        <%= f.hidden_field :ride_review_id, :value => rev.id %>
+                        <%= f.button "", :class => "glyphicon glyphicon-thumbs-down" %>
+                      <% end %>
+                    </div>
                   </div>
                 </div>
               </div>
