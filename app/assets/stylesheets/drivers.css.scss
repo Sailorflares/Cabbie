@@ -3,7 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .voting-system {
-  margin-left: 80%;}
+  margin-left: 80%;
+}
+
+div.voting-system h5 {
+  margin-left: 15%;
+}
 
 .star-ratings-css {
   unicode-bidi: bidi-override;
@@ -26,5 +31,6 @@
     left: 0px;
     overflow: hidden;
   }
+
   .star-ratings-css-bottom { z-index: 0; }
 }

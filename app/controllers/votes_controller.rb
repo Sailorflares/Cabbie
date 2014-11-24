@@ -10,7 +10,7 @@ class VotesController < ApplicationController
     if @vote.save
       redirect_to driver_path(@vote.ride_review.driver)
     else
-      flash[:error] = "Sorry, your opinion doesn't seem to matter to anyone." 
+      flash[:notice] = "Sorry, your opinion doesn't seem to matter to anyone." 
       redirect_to driver_path(@vote.ride_review.driver)
     end
   end
