@@ -10,4 +10,16 @@ class Driver < ActiveRecord::Base
     ride_reviews.average("star_rating").to_f.round(1)
   end
 
+  def stars_earned
+    ride_reviews.map{|review| review.star_rating}.inject(:+)
+  end  
+
+  def stars_possible
+    ride_reviews.count * 5
+  end  
+
+  def star_percentage
+    ((stars_earned.to_f / stars_possible.to_f) * 100).to_i
+  end
+
 end
