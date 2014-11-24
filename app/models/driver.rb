@@ -15,7 +15,11 @@ class Driver < ActiveRecord::Base
   end  
 
   def stars_possible
-    ride_reviews.count * 5
+    if ride_reviews.size > 0
+      return ride_reviews.count * 5
+    else
+      5  
+    end  
   end  
 
   def star_percentage
