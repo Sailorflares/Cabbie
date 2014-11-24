@@ -3,6 +3,7 @@ class DriversController < ApplicationController
   def show
     @driver = Driver.find(params[:id])
     @ride_review = RideReview.new
+    @vote = Vote.new
     if current_user
       @user = User.find(session[:user_id])
     end  

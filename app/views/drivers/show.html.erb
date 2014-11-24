@@ -50,6 +50,16 @@
                     </div>
                     <br>
                     <p>Review: <%= rev.comments %></p>
+                    <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
+                      <%= f.hidden_field :vote, :value => "1" %>
+                      <%= f.hidden_field :ride_review_id, :value => rev.id %>
+                      <%= f.submit "upvote!" %>
+                    <% end %>
+                    <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
+                      <%= f.hidden_field :vote, :value => "-1" %>
+                      <%= f.hidden_field :ride_review_id, :value => rev.id %>
+                      <%= f.submit "downvote!" %>
+                    <% end %>
                   </div>
                 </div>
               </div>

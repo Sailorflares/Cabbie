@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   post '/drivers' => 'drivers#search', as: :medallion_search
 
   resources :users do
-    resources :ride_reviews, only: [:new, :create, :show]
+    resources :ride_reviews, only: [:new, :create, :show] do
+      resources :votes, only: [:create]
+    end
   end
 
   resources :drivers, only: [:show]
