@@ -41,15 +41,17 @@
               <div class="col-md-10" style="display: inline-block;">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
-                    <h3 class="panel-title"><%= rev.user.name %> <%= rev.created_at.localtime.strftime("at %I:%M%p on %m/%d/%Y") %></h3>
-                  </div>
-                  <div class="panel-body">
+                    <h3 class="panel-title"><%= rev.created_at.localtime.strftime("%m/%d/%Y") %></h3>
                     <div class="star-ratings-css">
                       <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                       <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                     </div>
+                  </div>
+                  <div class="panel-body">
+                    <a href="<%= user_path(rev.user_id) %>"><%= rev.user.name %></a><br>
+                    <span class="glyphicon glyphicon-pencil"><p><%= pluralize(rev.user.ride_reviews.count, 'review') %></p></span>
                     <br>
-                    <p>Review: <%= rev.comments %></p>
+                    <p><%= rev.comments %></p>
                     <div class="voting-system">
                       <% if current_user %>  
                         <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>

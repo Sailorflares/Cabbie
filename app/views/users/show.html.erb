@@ -15,7 +15,7 @@
     <div class="col-md-6" style="margin:20px;">
       <div class="well" style="height: 450px; width: 550px; overflow: auto;">
       <% if current_user.id == @user.id %>
-        <h2 style="text-align: center;">Your reviews:</h2><br>
+        <h2 style="text-align: center;">Your Rides:</h2><br>
       <% else %>
         <h2 style="text-align: center;"><%= @user.name %>'s reviews:</h2><br>  
       <% end %>  
@@ -35,7 +35,7 @@
             <div class="col-md-10" style="display: inline-block;">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h3 class="panel-title"><%= rev.driver.formatted_name %> <%= rev.created_at.localtime.strftime("at %I:%M%p on %m/%d/%Y") %></h3>
+                  <h3 class="panel-title"><a href="<%= driver_path(rev.driver_id) %>"><%= rev.driver.formatted_name %></a> <%= rev.created_at.localtime.strftime("at %I:%M%p on %m/%d/%Y") %></h3>
                 </div>
                 <div class="panel-body">
                   <p>Rating: <%= rev.star_rating %></p>
