@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124154759) do
+ActiveRecord::Schema.define(version: 20141125155805) do
 
   create_table "drivers", force: true do |t|
     t.string "medallion_number"
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 20141124154759) do
     t.datetime "updated_at"
     t.string   "email"
     t.string   "password_digest"
+  end
+
+  create_table "violations", force: true do |t|
+    t.string  "license_number"
+    t.string  "date"
+    t.string  "charge"
+    t.string  "description"
+    t.integer "driver_id"
   end
 
   create_table "votes", force: true do |t|
