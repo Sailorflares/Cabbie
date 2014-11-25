@@ -101,6 +101,7 @@ a.btn-ghost .text,
   -moz-box-shadow: none;
   box-shadow: none;
   height: 40px;
+  width: 380px;
   border-color: #efefef;
 }
 .form-control::-webkit-input-placeholder {
@@ -2463,10 +2464,10 @@ input[type="button"] {
 }
 /* ======= Footer ======= */
 .footer {
-  background: #253340;
+  background: #f89d29;
   color: #fff;
-  padding-top: 40px;
-  font-size: 14px;
+  padding-top: 10px;
+  font-size: 24px;
   position: relative;
   z-index: 20;
 }
