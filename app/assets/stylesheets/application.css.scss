@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  *= require bootstrap.min
- *= require styles-8
+ *= require styles-4
  */
 
 @font-face {
@@ -47,7 +47,7 @@ ul.nav.nav-pills {
 .bg-container {
    /*position: relative;*/
 }
-.bg-container:after {
+/*.bg-container:after {
     content : "";
     display: block;
     position: absolute;
@@ -59,7 +59,11 @@ ul.nav.nav-pills {
     opacity : 0.3;
     z-index: -1;
 
-}
+}*/
+
+/*.section-on-bg {
+  background-image: url('/assets/taxi.jpg'); 
+}*/
 
 p.text-muted {
   margin-top: 20px;
