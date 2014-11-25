@@ -3,7 +3,21 @@
     
     <div class="col-md-6" style="margin:20px;">
       <h1><%= @driver.formatted_name %></h1>
-      <h2>Medallion Number: <%= @driver.medallion_number %></h2><br>
+      <% if @driver.medallion_number.length == 4 %>
+        <h4>Medallion Number: <%= @driver.medallion_number %></h4><br>
+      <% else %>
+        <h4>License Number: <%= @driver.medallion_number %></h4><br>
+      <% end %>  
+      <% if @driver.violations %>
+        <h4>Number of Current Summonses: <%= @driver.violations.count %></h4><br>
+        <% @driver.violations.each do |viol| %>
+            <h5>Date: <%= viol.date %></h5>
+            <h5>Charge: <%= viol.charge %></h5> 
+            <h5>Description: <%= viol.description %></h5> 
+        <% end %>
+      <% end %>
+
+
     </div>
 
     <div class="col-md-5" style="margin:20px;">
