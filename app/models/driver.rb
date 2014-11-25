@@ -27,9 +27,4 @@ class Driver < ActiveRecord::Base
     ((stars_earned.to_f / stars_possible.to_f) * 125).to_i
   end
    
-  def summons
-    if Violation.license_number == self.medallion_number
-      Violation.driver_id = self.driver_id
-    end  
-  end 
 end
