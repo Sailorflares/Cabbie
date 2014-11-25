@@ -406,7 +406,7 @@ input[type="button"] {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity : 0.9;
+  opacity : 0.7;
 }
 .bg-slider-wrapper .flexslider .slide.slide-2 {
   background: #253340 url('../images/background/bg-header-2.jpg') no-repeat 50% top;
