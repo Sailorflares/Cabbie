@@ -3,7 +3,7 @@ class CreateVotes < ActiveRecord::Migration
     create_table :votes do |t|
       t.belongs_to :ride_review
       t.belongs_to :user
-      t.integer :value_of_votes
+      t.integer :value_of_votes#:default => 0
 
       t.timestamps
     end
