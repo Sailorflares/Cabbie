@@ -23,7 +23,7 @@ class Driver < ActiveRecord::Base
   end  
 
   def star_percentage
-    ((stars_earned.to_f / stars_possible.to_f) * 100).to_i
+    ((stars_earned.to_f / stars_possible.to_f) * 125).to_i
   end
 
 end

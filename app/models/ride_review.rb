@@ -6,7 +6,7 @@ class RideReview < ActiveRecord::Base
   validates_presence_of :star_rating
 
   def star_rating_percentage
-    ((star_rating.to_f / 5) * 100).to_i
+    ((star_rating.to_f / 5) * 125).to_i
   end  
 
 end
