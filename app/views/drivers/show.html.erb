@@ -7,7 +7,7 @@
         <h4>Medallion Number: <%= @driver.medallion_number %></h4><br>
       <% else %>
         <h4>License Number: <%= @driver.medallion_number %></h4><br>
-      <% end %>  
+      <% end %>
       <% if @driver.violations.size > 0 %>
         <h4>Number of Current Summonses: <%= @driver.violations.count %></h4><br>
         <% @driver.violations.each do |viol| %>
