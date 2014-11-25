@@ -12,10 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
+ *= require styles-8
  */
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
 @font-face {
   font-family: "Track";

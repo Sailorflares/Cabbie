@@ -82,6 +82,10 @@
         <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
         <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
           <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
+          <% (1..5).each do |i| %>
+            <span class="rating_star" id="<%= @driver.id%>_<%=i%>" data-stars="<%=i%>" data-form-id="<%= @driver.id%>">★</span>
+          <% end %>
+        
           <p><%= f.text_area(:comments, :placeholder => "Review your driver", :class => "form-control", :rows => 10)%></p>
                <%= f.hidden_field :driver_id, :value => @driver.id %>
           <%= f.submit 'Submit review!', :class => 'btn btn-primary' %>
