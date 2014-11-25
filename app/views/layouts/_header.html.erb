@@ -20,10 +20,9 @@
                     <% if !user_signed_in? %>
                         <li class="nav-item"><a href="<%= signup_path %>">Sign Up</a></li>
                         <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="/login">Log In</a></li>
-                    <% elsif user_signed_in? %>
-                        <li class="nav-item"><a href="<%= user_path(current_user) %>">Your Reviews</a></li>
+                    <% else %>
+                        <li class="nav-item"><a href="<%= user_path(current_user) %>"><%= "#{current_user.name}'s Rides" %></a></li>
                         <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="/logout">Log Out</a></li>
-                        <p class="navbar-text navbar-center"><%= "Hello, #{current_user.name}!" %></p>
                     <% end %>
                 </ul><!--//nav-->
             </div><!--//navabr-collapse-->
