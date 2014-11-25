@@ -1,0 +1,18 @@
+$(function() {
+  $('.rating_star').click(function() {
+    var star = $(this);
+    var form_id = star.attr("data-form-id");
+    var stars = star.attr("data-stars");
+    $('#' + form_id + '_stars').val(stars);
+
+    $post(
+      
+      url: $('#' + form_id).attr('action') + '.json',
+      data: $('#' _ form_id).serialize(),
+      success: function(response){
+        console.log(response);
+      
+    })
+    
+  });
+});
