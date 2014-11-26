@@ -1,3 +1,108 @@
+
+    
+        
+<!-- ******BLOG LIST****** --> 
+<div class="blog blog-category blog-archive container">
+    <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @driver.formatted_name %> </h2>
+    
+  <% if @driver.ride_reviews.size == 0 %>
+   
+    <div class="row">
+      <div class="col-md-7">
+        <div class="blog-list blog-category-list">  
+              <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                  <div class="post-inner">
+                      <div class="content"> 
+                        
+                          <h3 class="post-title text-center">It looks like <%= @driver.formatted_name %> doesn't have any reviews yet.</h3>     
+                          <br>                
+                          <h3 class="post-title text-center">Good news: you get to be the first one to review this driver!</h3>
+                      </div><!--//content-->
+                  </div><!--//post-inner-->
+              </article><!--//post-->          
+          </div><!--//blog-list-->    
+    </div><!--//row-->
+
+  <% else %>
+    
+    <div class="row">
+          <% @driver.ride_reviews.reverse.each do |rev| %>    
+      <div class="col-md-7">
+        <div class="blog-list blog-category-list">
+            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                <div class="post-inner">
+                    <div class="content">
+                        <div class="date-label">
+                            <span class="month"><%= rev.created_at.localtime.strftime("%b") %></span>
+                            <span class="date-number"><%= rev.created_at.localtime.strftime("%d") %></span>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div class="star-ratings-css">
+                              <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                              <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            </div>
+                          </div>  
+                        </div>  
+                   
+                        <div class="meta">
+                            <ul class="meta-list list-inline">                                       
+                              <li class="post-author"><a href="<%= user_path(rev.user_id) %>"><%= rev.user.name %></a></li>
+                              <li class="post-comments-link">
+                                  <i class="fa fa-comments"></i>
+                                    <!-- <div class="star-ratings-css">
+                                      <div class="col-md-12"></div>
+                                    </div> -->
+                              </li>
+                          </ul><!--//meta-list-->                             
+                        </div><!--meta-->                               
+                        <div class="post-entry">
+                            <p><%= rev.comments %></p>
+                            <!-- <a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a> -->
+                        </div>                                
+                    </div><!--//content-->
+                </div><!--//post-inner-->
+            </article><!--//post-->
+          </div>
+          </div>  
+            <% end %>
+        
+
+            
+            
+  <% end %>       
+  </div>                       
+        </div>
+
+        <div class="col-md-5">
+
+          <% if current_user %>
+      <div class="col-md-5" style="margin: 20px;">
+        <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
+        <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
+          <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
+          <% (1..5).each do |i| %>
+            <span class="rating_star" id="<%= @driver.id%>_<%=i%>" data-stars="<%=i%>" data-form-id="<%= @driver.id%>">★</span>
+          <% end %>
+        
+          <p><%= f.text_area(:comments, :placeholder => "Review your driver", :class => "form-control", :rows => 10)%></p>
+               <%= f.hidden_field :driver_id, :value => @driver.id %>
+          <%= f.submit 'Submit review!', :class => 'btn btn-primary' %>
+        <% end %>
+    <% else %>
+      <div class="col-md-4" style="margin: 50px;">
+        <a href="/login" button type="button" class="btn btn-primary btn-lg btn-block">Please log in to write a review</a></button>
+      </div>
+    <% end %>    
+
+        </div>  
+      </div><!--//blog-list-->  
+    </div><!--//row-->
+</div><!--//blog-->        
+
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
 <div class="container">
   <div class="row">
     
