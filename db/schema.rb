@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125155805) do
+ActiveRecord::Schema.define(version: 20141126142849) do
 
   create_table "drivers", force: true do |t|
     t.string "medallion_number"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20141125155805) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "comments"
+    t.boolean  "uber",        default: false
   end
 
   create_table "users", force: true do |t|
