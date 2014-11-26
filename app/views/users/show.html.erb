@@ -4,9 +4,9 @@
 <!-- ******BLOG LIST****** --> 
 <div class="blog blog-category blog-archive container">
   <% if current_user.id == @user.id %>
-    <h2 class="page-title text-center"><i class="fa fa-archive"></i> Your Reviews </h2>
+    <h2 class="page-title text-center"> Your Reviews </h2>
   <% else %>
-    <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @user.name %>'s Reviews </h2>
+    <h2 class="page-title text-center"> <%= @user.name %>'s Reviews </h2>
   <% end %>  
   <% if @user.ride_reviews.size == 0 %>
    
@@ -43,11 +43,10 @@
                             <ul class="meta-list list-inline">                                       
                               <li class="post-author"> by <%= @user.name %></a></li>
                               <li class="post-comments-link">
-                                  <i class="fa fa-comments"></i>
-                                    <div class="star-ratings-css">
-                                      <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                    </div>
+                                  <div class="star-ratings-css">
+                                    <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                    <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                  </div>
                               </li>
                           </ul><!--//meta-list-->                             
                         </div><!--meta-->                               
