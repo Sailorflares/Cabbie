@@ -3,26 +3,42 @@
         
 <!-- ******BLOG LIST****** --> 
 <div class="blog blog-category blog-archive container">
-    <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @driver.formatted_name %> </h2>
+    <h2 class="page-title text-center"><i class="fa fa-archive"></i> Reviews for: <%= @driver.formatted_name %> </h2>
       <div class="row">
         <div class="col-md-2">
         </div>
         <div class="col-md-4">
-          <% if @driver.medallion_number.length == 4 %>
+          <div class="blog-list blog-category-list">
+            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+          <div class="post-inner">
+            <div class="content">
+              <div class="meta">
+                <div class="post-entry">
+            <% if @driver.medallion_number.length == 4 %>
               <h4>Medallion Number: <%= @driver.medallion_number %></h4><br>
             <% else %>
               <h4>License Number: <%= @driver.medallion_number %></h4><br>
             <% end %>
-            
+            <h3>Average Rating:</h3>
+              <div class="star-ratings-css">
+                <div class="star-ratings-css-top" style="width: <%= @driver.star_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </article>
+        </div>
         </div>
         <div class="col-md-4">
           <% if @driver.violations.size > 0 %>
-              <h4>Number of Current Summonses: <%= @driver.violations.count %></h4><br>
+            <h4><%= @driver.formatted_name %>'s Traffic Violations:</h4><br>
               <% @driver.violations.each do |viol| %>
-                  <h5>Date: <%= viol.date %></h5>
-                  <h5>Charge: <%= viol.charge %></h5> 
-                  <h5>Description: <%= viol.description %></h5> 
-            <% end %>
+                  <h5><%= viol.date %>: Charge <%= viol.charge %><br><%= viol.description %></h5>
+              <% end %>
+          <% else %>
+            <h4><%= @driver.formatted_name %>'s Traffic Violations: 0</h4><br>
           <% end %>
         </div>
         <div class="col-md-2">
@@ -33,15 +49,16 @@
    
     <div class="row">
       <div class="col-md-7">
-        <div class="blog-list blog-category-list">  
+          <div class="blog-list blog-category-list">
               <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
                   <div class="post-inner">
-                      <div class="content"> 
-                        
-                          <h3 class="post-title text-center">It looks like <%= @driver.formatted_name %> doesn't have any reviews yet.</h3>     
-                          <br>                
-                          <h3 class="post-title text-center">Good news: you get to be the first one to review this driver!</h3>
-                      </div><!--//content-->
+                    <div class="content">
+                      <div class="meta">
+                        <div class="post-entry">
+                          <p>It looks like <%= @driver.formatted_name %> doesn't have any reviews yet. Good news: you get to be the first one to review this driver!</p>
+                        </div>
+                      </div>
+                    </div><!--//content-->
                   </div><!--//post-inner-->
               </article><!--//post-->          
           </div><!--//blog-list-->    
@@ -59,6 +76,9 @@
                         <div class="date-label">
                             <span class="month"><%= rev.created_at.localtime.strftime("%b") %></span>
                             <span class="date-number"><%= rev.created_at.localtime.strftime("%d") %></span>
+                            <div>
+                              <button class="glyphicon glyphicon-thumbs-down"></button>
+                            </div>
                         </div>
                         <div class="row">
                           <div class="col-md-2">
@@ -83,7 +103,8 @@
                         <div class="post-entry">
                             <p><%= rev.comments %></p>
                             <!-- <a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a> -->
-                        </div>                                
+                        </div>   
+
                     </div><!--//content-->
                 </div><!--//post-inner-->
             </article><!--//post-->
