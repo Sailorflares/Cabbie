@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-3">
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" style="margin-top:-1%;">
       <%= form_for @user, :html => {:class => "form-sign-in"} do |f| %>
         <% if @user.errors.any? %>
           <div id="error_explanation">
@@ -22,20 +22,20 @@
           <div class="col-md-8">
             <div class="field">
               <%= f.label :name, :class => "sr-only" %>
-              <%= f.text_field :name, :class => "form-control", :placeholder => "Username", :autofocus => true %><br>
+              <%= f.text_field :name, :class => "form-control", :placeholder => "Username", :autofocus => true, style: "width:75%;margin:auto;" %><br>
             </div>
             <div class="field">
               <%= f.label :email, :class => "sr-only" %>
-              <%= f.text_field :email, :class => "form-control", :placeholder => "Email" %><br>
+              <%= f.text_field :email, :class => "form-control", :placeholder => "Email", style: "width:75%;margin:auto;"%><br>
             </div>
             <div class="field">
               <%= f.label :password, :class => "sr-only" %>
-              <%= f.password_field :password, :class => "form-control", :placeholder => "Password" %><br>
+              <%= f.password_field :password, :class => "form-control", :placeholder => "Password", style: "width:75%;margin:auto;"%><br>
             </div>
             <div class="field">
               <%= f.label :password_confirmation, :class => "sr-only" %>
-              <%= f.password_field :password_confirmation, :class => "form-control", :placeholder => "Password Confirmation" %><br><br>
-              <%= f.submit "Sign me up!", :class => "btn btn-lg btn-primary btn-block" %>
+              <%= f.password_field :password_confirmation, :class => "form-control", :placeholder => "Password Confirmation", style: "width:75%;margin:auto;"%><br><br>
+              <%= f.submit "Sign me up!",:class => "btn btn-cta btn-cta-primary", :style => "width:75%;margin-left:12.75%;" %>
             </div>
           </div>
         </div>

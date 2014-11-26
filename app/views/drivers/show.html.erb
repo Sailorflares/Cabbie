@@ -121,7 +121,13 @@
       <div class="col-md-3" style="margin: 20px;">
         <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
         <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
-          <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
+          <h4>Rating:</h4>
+          <p><%= f.select :star_rating, options_for_select([1,2,3,4,5]), :autofocus => false%></p>
+          <p>
+              <%= f.label :uber do %>Uber?
+              <%= f.check_box :uber %>
+            <% end %>
+          </p>  
           <% (1..5).each do |i| %>
             <span class="rating_star" id="<%= @driver.id%>_<%=i%>" data-stars="<%=i%>" data-form-id="<%= @driver.id%>">★</span>
           <% end %>
@@ -230,9 +236,6 @@
         <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
         <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
           <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
-          <% (1..5).each do |i| %>
-            <span class="rating_star" id="<%= @driver.id%>_<%=i%>" data-stars="<%=i%>" data-form-id="<%= @driver.id%>">★</span>
-          <% end %>
         
           <p><%= f.text_area(:comments, :placeholder => "Review your driver", :class => "form-control", :rows => 10)%></p>
                <%= f.hidden_field :driver_id, :value => @driver.id %>
