@@ -9,9 +9,7 @@
         <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email", :autofocus => true %><br>
         <%= label_tag :password, nil, class: "sr-only" %>
         <%= password_field_tag :password, nil, class: "form-control", placeholder: "Password" %><br>
-        <%= submit_tag "Log In", :class => "btn btn-lg btn-primary btn-block" %>
-    </div>
-    <div class="col-md-4">
+        <%= submit_tag "Log In", {:class => "btn btn-cta btn-cta-primary", :style => "width:105.5%;"}%>
     </div>
   </div> 
 </div>
