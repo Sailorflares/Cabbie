@@ -12,11 +12,11 @@
    
     <div class="row">
         <div class="blog-list blog-category-list">  
-            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0" style="margin-top: 40px;">
                 <div class="post-inner">
                     <div class="content">
                       <% if current_user.id == @user.id %>
-                        <h3 class="post-title text-center">It looks like you haven't left any reviews yet.</h3> 
+                        <h3 class="post-title text-center">It looks like you haven't left any reviews yet. Why not write one today?</h3> 
                       <% else %>
                         <h3 class="post-title text-center">It looks like <%= @user.name %> hasn't left any reviews yet.</h3>                     
                       <% end %>   
