@@ -37,12 +37,12 @@
               <div class="meta">
                 <div class="post-entry">
                   <% if @driver.violations.size > 0 %>
-                    <h4><%= @driver.formatted_name %>'s Traffic Violations:</h4><br>
+                    <h4><%= @driver.formatted_name %>'s Violations:</h4><br>
                       <% @driver.violations.each do |viol| %>
                           <h5><%= viol.date %>: Charge <%= viol.charge %><br><%= viol.description %></h5>
                       <% end %>
                   <% else %>
-                    <h4><%= @driver.formatted_name %>'S Traffic Violations: 0</h4><br>
+                    <h4><%= @driver.formatted_name %> has no violations.</h4><br>
                   <% end %>
                 </div>
               </div>
@@ -53,7 +53,7 @@
     </div>
     
     <% if current_user %>
-      <div class="col-md-4">
+      <div class="col-md-4" id="form-padding">
          <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
             <p><%= f.text_area(:comments, :placeholder => "What are you waiting for? Review and rate your ride!", :class => "form-control", :rows => 10)%></p>
             <%= f.select :star_rating, options_for_select([1,2,3,4,5]), :autofocus => false%>
@@ -61,13 +61,14 @@
               <%= f.check_box :uber %>
             <% end %>
             <%= f.hidden_field :driver_id, :value => @driver.id %>
-            <%= f.submit 'Submit review!', :class => 'btn btn-cta btn-cta-secondary' %>
+            <%= f.submit 'Submit review!', :class => 'btn btn-cta btn-cta-tertiary' %>
         <% end %>
       </div>
     <% else %>
+      <div class="col-md-4" id="form-padding">
         <!-- <div class="col-md-4" style="margin: 50px;"> -->
-          <a href="/login" button type="button" class="btn btn-primary btn-lg btn-block">Please log in to write a review</a></button>
-        <!-- </div> -->
+          <a href="/login" button type="button" class="btn btn-cta btn-cta-tertiary">Please log in to write a review</a></button>
+        </div>
     <% end %>
   </div>
 </div>
@@ -106,8 +107,8 @@
                 <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                 <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
               </div>
-              <a href="<%= user_path(rev.user_id) %>"><%= rev.user.name %></a><br>
-              <p>on <%= rev.created_at.localtime.strftime("%b") %> <%= rev.created_at.localtime.strftime("%d") %></p>
+              <h4><a href="<%= user_path(rev.user_id) %>"><%= rev.user.name %></a></h4>
+              <h5>on <%= rev.created_at.localtime.strftime("%b") %> <%= rev.created_at.localtime.strftime("%d") %></h5>
               <p class="review-styling"><%= rev.comments %></p>
               <div class="voting-system" id="thumbs-up">
                 <% if current_user %>  

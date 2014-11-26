@@ -59,18 +59,36 @@ a.btn-cta-primary:hover,
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
+  background: none;
+  border: 2px solid #f89d29;
+  color: #f89d29;
+}
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+  background: #f79210;
+  border: 2px solid #f79210;
+  color: #fff;
+}
+
+a.btn-cta-tertiary,
+.btn-cta-tertiary {
   background: #f79210;
   border: 2px solid #f89d29;
   color: #fff;
   height: 45px;
   margin-left: 20px;
 }
-a.btn-cta-secondary:hover,
-.btn-cta-secondary:hover {
+a.btn-cta-tertiary:hover,
+.btn-cta-tertiary:hover {
   background: none;
   border: 2px solid #f79210;
   color: #fff;
 }
+
+
+
+
+
 a.btn-ghost,
 .btn-ghost {
   background: none;
