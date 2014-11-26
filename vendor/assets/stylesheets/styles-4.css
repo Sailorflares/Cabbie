@@ -457,7 +457,7 @@ input[type="button"] {
 }
 /* ======= Promo ======= */
 .promo {
-  /*padding-top: 120px;*/
+  padding-top: 50px;
   position: relative;
   color: #fff;
   margin-bottom: 80px;
