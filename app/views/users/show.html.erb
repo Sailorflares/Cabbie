@@ -1,124 +1,72 @@
 
-<!-- <body class="blog-page blog-archive-page"> -->
-    <div class="wrapper">
-        <!-- ******HEADER****** --> 
-        <header class="header navbar-fixed-top">  
-            <div class="container">       
-                <h1 class="logo">
-                    <a href="blog.html">Velocity <span class="sub">Blog</span></a>
-                </h1><!--//logo-->
-                <nav class="main-nav navbar-right" role="navigation">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button><!--//nav-toggle-->
-                    </div><!--//navbar-header-->
-                    <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Categories <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="blog-category.html">Tech</a></li>
-                                    <li><a href="blog-category.html">Apps</a></li>
-                                    <li><a href="blog-category.html">News</a></li>
-                                    <li><a href="blog-category.html">Community</a></li>              
-                                </ul>                            
-                            </li><!--//dropdown-->
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Archives <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="blog-archive.html">Sep 2014 (5)</a></li>
-                                    <li><a href="blog-archive.html">Aug 2014 (6)</a></li>
-                                    <li><a href="blog-archive.html">July 2014 (3)</a></li>
-                                    <li><a href="blog-archive.html">June 2014 (4)</a></li>              
-                                </ul>                            
-                            </li><!--//dropdown-->
-                            <li class="nav-item nav-item-main-site last"><a href="index.html"><i class="fa fa-home"></i> Back to main site</a></li>
-                        </ul><!--//nav-->
-                        
-                        <div class="searchbox-container">
-                            <form class="searchbox">
-                                <label class="sr-only" for="search-form">Search</label>
-                                <input id="search-form" class="form-control searchbox-input" onkeyup="buttonUp();" placeholder="Search the blog..." type="search" value="" name="search-form">
-                                <input class="searchbox-submit" type="submit" value="GO">
-                                <i class="fa fa-search searchbox-icon"></i>
-                            </form>
-                        </div><!--//searchbox-container-->                                                
-                        
-                    </div><!--//navabr-collapse-->
-                </nav><!--//main-nav-->         
-            </div><!--//container-->
-        </header><!--//header-->         
+    
         
-        <!-- ******BLOG LIST****** --> 
-        <div class="blog blog-category blog-archive container">
-          <% if current_user.id == @user.id %>
-            <h2 class="page-title text-center"><i class="fa fa-archive"></i> Your Reviews </h2>
-          <% else %>
-            <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @user.name %>'s Reviews </h2>
-          <% end %>  
-          <% if @user.ride_reviews.size == 0 %>
-           
-            <div class="row">
-                <div class="blog-list blog-category-list">  
-                    <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
-                        <div class="post-inner">
-                            <div class="content">
-                              <% if current_user.id == @user.id %>
-                                <h3 class="post-title text-center">It looks like you haven't left any reviews yet.</h3> 
-                              <% else %>
-                                <h3 class="post-title text-center">It looks like <%= @user.name %> hasn't left any reviews yet.</h3>                     
-                              <% end %>   
-                            </div><!--//content-->
-                        </div><!--//post-inner-->
-                    </article><!--//post-->          
-                </div><!--//blog-list-->  
-            </div><!--//row-->
-       
-          <% else %>
+<!-- ******BLOG LIST****** --> 
+<div class="blog blog-category blog-archive container">
+  <% if current_user.id == @user.id %>
+    <h2 class="page-title text-center"><i class="fa fa-archive"></i> Your Reviews </h2>
+  <% else %>
+    <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @user.name %>'s Reviews </h2>
+  <% end %>  
+  <% if @user.ride_reviews.size == 0 %>
+   
+    <div class="row">
+        <div class="blog-list blog-category-list">  
+            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                <div class="post-inner">
+                    <div class="content">
+                      <% if current_user.id == @user.id %>
+                        <h3 class="post-title text-center">It looks like you haven't left any reviews yet.</h3> 
+                      <% else %>
+                        <h3 class="post-title text-center">It looks like <%= @user.name %> hasn't left any reviews yet.</h3>                     
+                      <% end %>   
+                    </div><!--//content-->
+                </div><!--//post-inner-->
+            </article><!--//post-->          
+        </div><!--//blog-list-->  
+    </div><!--//row-->
+
+  <% else %>
+    
+    <div class="row">
+        <div class="blog-list blog-category-list">
+          <% @user.ride_reviews.reverse.each do |rev| %>    
+            <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
+                <div class="post-inner">
+                    <div class="content">
+                        <div class="date-label">
+                            <span class="month"><%= rev.created_at.localtime.strftime("%b") %></span>
+                            <span class="date-number"><%= rev.created_at.localtime.strftime("%d") %></span>
+                        </div>
+                        <h3 class="post-title"><a href="<%= driver_path(rev.driver_id) %>"><%= rev.driver.formatted_name %></a></h3>
+                        <div class="meta">
+                            <ul class="meta-list list-inline">                                       
+                              <li class="post-author"> by <%= @user.name %></a></li>
+                              <li class="post-comments-link">
+                                  <i class="fa fa-comments"></i>
+                                    <div class="star-ratings-css">
+                                      <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                                    </div>
+                              </li>
+                          </ul><!--//meta-list-->                             
+                        </div><!--meta-->                               
+                        <div class="post-entry">
+                            <p><%= rev.comments %></p>
+                            <!-- <a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a> -->
+                        </div>                                
+                    </div><!--//content-->
+                </div><!--//post-inner-->
+            </article><!--//post-->
+            <% end %>
             
-            <div class="row">
-                <div class="blog-list blog-category-list">
-                  <% @user.ride_reviews.reverse.each do |rev| %>    
-                    <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
-                        <div class="post-inner">
-                            <div class="content">
-                                <div class="date-label">
-                                    <span class="month"><%= rev.created_at.localtime.strftime("%b") %></span>
-                                    <span class="date-number"><%= rev.created_at.localtime.strftime("%d") %></span>
-                                </div>
-                                <h3 class="post-title"><a href="<%= driver_path(rev.driver_id) %>"><%= rev.driver.formatted_name %></a></h3>
-                                <div class="meta">
-                                    <ul class="meta-list list-inline">                                       
-                                      <li class="post-author"> by <%= @user.name %></a></li>
-                                      <li class="post-comments-link">
-                                          <i class="fa fa-comments"></i>
-                                            <div class="star-ratings-css">
-                                              <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                              <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                                            </div>
-                                      </li>
-                                  </ul><!--//meta-list-->                             
-                                </div><!--meta-->                               
-                                <div class="post-entry">
-                                    <p><%= rev.comments %></p>
-                                    <!-- <a class="read-more" href="blog-single.html">Read more <i class="fa fa-long-arrow-right"></i></a> -->
-                                </div>                                
-                            </div><!--//content-->
-                        </div><!--//post-inner-->
-                    </article><!--//post-->
-                    <% end %>
-                    
-                    
-                    
-          <% end %>                              
-                </div><!--//blog-list-->  
-            </div><!--//row-->
-        </div><!--//blog-->        
-    </div><!--//wrapper-->
-    
-    
+            
+            
+  <% end %>                              
+        </div><!--//blog-list-->  
+    </div><!--//row-->
+</div><!--//blog-->        
+
+
+
 

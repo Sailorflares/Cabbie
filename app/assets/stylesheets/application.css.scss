@@ -27,7 +27,8 @@
 
 body { 
   padding-top: 50px; 
-  font-family: "Track";  
+  font-family: "Track";
+    
   /*background: url('/assets/taxi.jpg');*/
 }
 
@@ -36,11 +37,11 @@ ul.nav.nav-pills {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 20px;
+  height: auto;
   background-color: #f5f5f5;
 }
 

@@ -457,7 +457,7 @@ input[type="button"] {
 }
 /* ======= Promo ======= */
 .promo {
-  padding-top: 120px;
+  /*padding-top: 120px;*/
   position: relative;
   color: #fff;
   margin-bottom: 80px;
@@ -1680,6 +1680,7 @@ input[type="button"] {
 }
 .blog-list .post .post-inner {
   padding: 0px;
+  background: white;
   position: relative;
   border: 1px solid #efefef;
   -webkit-border-radius: 4px;
@@ -2468,7 +2469,7 @@ input[type="button"] {
   color: #fff;
   padding-top: 10px;
   font-size: 24px;
-  position: relative;
+  position: fixed;
   z-index: 20;
 }
 .footer p {
@@ -2970,7 +2971,7 @@ input[type="button"] {
     font-size: 16px;
   }
   .promo {
-    height: 420px;
+    /*height: 420px;*/
   }
   .why .item .content {
     margin-bottom: 60px;
@@ -3163,7 +3164,7 @@ input[type="button"] {
   }
   .promo {
     height: 420px;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
   }
   .promo.section .intro {
     margin-bottom: 30px;
@@ -3253,8 +3254,8 @@ input[type="button"] {
     float: right !important;
   }
   .promo {
-    height: 620px;
-    padding-top: 120px;
+    height: 430px;
+    /*padding-top: 120px;*/
   }
   .promo.section .intro {
     margin-bottom: 45px;
