@@ -101,6 +101,11 @@
         <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
         <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
           <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
+          <p>
+              <%= f.label :uber do %>Uber?
+              <%= f.check_box :uber %>
+            <% end %>
+          </p>  
           <% (1..5).each do |i| %>
             <span class="rating_star" id="<%= @driver.id%>_<%=i%>" data-stars="<%=i%>" data-form-id="<%= @driver.id%>">★</span>
           <% end %>
