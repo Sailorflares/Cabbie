@@ -98,7 +98,7 @@ p.text-muted {
 }
 
 #thumbs-up {
-  color: blue;
+  color: #f89d29;
 }
 
 #license-info-text {
@@ -109,5 +109,17 @@ p.text-muted {
   padding: 20px;
 }
 
+.review-styling {
+  color: #666666;
+  padding: 30px;
+  padding-bottom: 30px;
+  height: 50%;
+}
 
+.btn .btn-primary .submit {
+  color: #f89d29;
+}
 
+.extra-margin-for-rows {
+  margin-bottom: 50px;
+}

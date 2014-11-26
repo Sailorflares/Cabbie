@@ -43,12 +43,12 @@ a.btn .fa {
 }
 a.btn-cta,
 .btn-cta {
-  padding: 8px 30px;
+  padding: 8px 20px;
 }
 a.btn-cta-primary,
 .btn-cta-primary {
   background: #f89d29;
-  border: 2px solid #f89d29;
+  border: 1px solid #f89d29;
   color: #fff;
 }
 a.btn-cta-primary:hover,
@@ -59,14 +59,16 @@ a.btn-cta-primary:hover,
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
-  background: none;
+  background: #f79210;
   border: 2px solid #f89d29;
-  color: #f89d29;
+  color: #fff;
+  height: 45px;
+  margin-left: 20px;
 }
 a.btn-cta-secondary:hover,
 .btn-cta-secondary:hover {
-  background: #f89d29;
-  border: 2px solid #f89d29;
+  background: none;
+  border: 2px solid #f79210;
   color: #fff;
 }
 a.btn-ghost,

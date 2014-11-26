@@ -42,7 +42,7 @@
                           <h5><%= viol.date %>: Charge <%= viol.charge %><br><%= viol.description %></h5>
                       <% end %>
                   <% else %>
-                    <h4><%= @driver.formatted_name %>'s Traffic Violations: 0</h4><br>
+                    <h4><%= @driver.formatted_name %>'S Traffic Violations: 0</h4><br>
                   <% end %>
                 </div>
               </div>
@@ -55,15 +55,13 @@
     <% if current_user %>
       <div class="col-md-4">
          <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
-            <p><%= f.text_area(:comments, :placeholder => "Review your driver", :class => "form-control", :rows => 10)%></p>
-            <p><%= f.select :star_rating, options_for_select([1,2,3,4,5]), :autofocus => false%></p>
-            <p>
+            <p><%= f.text_area(:comments, :placeholder => "What are you waiting for? Review and rate your ride!", :class => "form-control", :rows => 10)%></p>
+            <%= f.select :star_rating, options_for_select([1,2,3,4,5]), :autofocus => false%>
             <%= f.label :uber do %>Uber driver?
               <%= f.check_box :uber %>
             <% end %>
-            </p>  
             <%= f.hidden_field :driver_id, :value => @driver.id %>
-            <%= f.submit 'Submit review!', :class => 'btn btn-primary' %>
+            <%= f.submit 'Submit review!', :class => 'btn btn-cta btn-cta-secondary' %>
         <% end %>
       </div>
     <% else %>
@@ -78,64 +76,39 @@
 
   
   <% if @driver.ride_reviews.size == 0 %>
-    <div class="row">
-      <div class="col-md-7">
-        <div class="blog-list blog-category-list">
-          <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
-            <div class="post-inner">
-              <div class="content">
-                <div class="meta">
-                  <div class="post-entry">
-                    <p>
-                      It looks like <%= @driver.formatted_name %> doesn't have any reviews yet. Good news: you get to be the first one to review this driver!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>          
-        </div>
-      </div><!--//7-->    
-    </div><!--//row-->
+
+  <div class="row" id="extra-margin-for-rows">
+      <div class="blog-list blog-category-list">  
+          <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0" style="margin-top: 40px;">
+              <div class="post-inner">
+                  <div class="content">
+                    <h3 class="post-title text-center"> It looks like <%= @driver.formatted_name %> doesn't have any reviews yet. Good news: you get to be the first one to review this driver!</h3>   
+                  </div><!--//content-->
+              </div><!--//post-inner-->
+          </article><!--//post-->          
+      </div><!--//blog-list-->  
+  </div><!--//row-->
+  <div class="row">
+    <div class="col-md-6"></div>
+  </div>
+
   <% else %>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-10">
     <% @driver.ride_reviews.reverse.each do |rev| %>
       <div class="row">
+        <div class="col-md-4"></div>
 
-        <div class="col-md-2">
-          <div class="blog-list blog-category-list no-background-color-or-border">
-             <article class="post col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-of fset-0">
-              <div class="post-inner" id="no-background-color-or-border">
-                <div class="content">
-                  <div class="date-label">
-                    <span class="month"><%= rev.created_at.localtime.strftime("%b") %></span>
-                    <span class="date-number">
-                      <%= rev.created_at.localtime.strftime("%d") %>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="col-md-10" style="display: inline-block;">
+        <div class="col-md-7" style="display: inline-block;">
           <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title"><%= rev.created_at.localtime.strftime("%m/%d/%Y") %></h3>
-
-
+            <div class="review-styling">
               <div class="star-ratings-css">
                 <div class="star-ratings-css-top" style="width: <%= rev.star_rating_percentage %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                 <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
               </div>
-            </div>
-            <div class="panel-body">
               <a href="<%= user_path(rev.user_id) %>"><%= rev.user.name %></a><br>
-              <!-- <span class="glyphicon glyphicon-pencil"><p><%= pluralize(rev.user.ride_reviews.count, 'review') %></p></span> -->
-              <br>
-              <p><%= rev.comments %></p>
+              <p>on <%= rev.created_at.localtime.strftime("%b") %> <%= rev.created_at.localtime.strftime("%d") %></p>
+              <p class="review-styling"><%= rev.comments %></p>
               <div class="voting-system" id="thumbs-up">
                 <% if current_user %>  
                   <%= form_for @vote, url: user_ride_review_votes_path(@user.id, rev.id) do |f| %>
@@ -154,12 +127,18 @@
                   <% end %>
                 <% end %>  
               </div>
+              <% if rev.uber == true %>
+                <p><em>* Uber-affiliated ride</em></p>
+              <% end  %>
             </div>
           </div>
         </div>
       </div>
     <% end %>
   </div>
+</div>
+<div class="row">
+  <div class="col-md-6"></div>
 </div>
   <% end %>       
 
