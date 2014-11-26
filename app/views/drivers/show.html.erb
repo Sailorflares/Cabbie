@@ -4,6 +4,30 @@
 <!-- ******BLOG LIST****** --> 
 <div class="blog blog-category blog-archive container">
     <h2 class="page-title text-center"><i class="fa fa-archive"></i> <%= @driver.formatted_name %> </h2>
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+          <% if @driver.medallion_number.length == 4 %>
+              <h4>Medallion Number: <%= @driver.medallion_number %></h4><br>
+            <% else %>
+              <h4>License Number: <%= @driver.medallion_number %></h4><br>
+            <% end %>
+            
+        </div>
+        <div class="col-md-4">
+          <% if @driver.violations.size > 0 %>
+              <h4>Number of Current Summonses: <%= @driver.violations.count %></h4><br>
+              <% @driver.violations.each do |viol| %>
+                  <h5>Date: <%= viol.date %></h5>
+                  <h5>Charge: <%= viol.charge %></h5> 
+                  <h5>Description: <%= viol.description %></h5> 
+            <% end %>
+          <% end %>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
     
   <% if @driver.ride_reviews.size == 0 %>
    
@@ -66,18 +90,14 @@
           </div>
           </div>  
             <% end %>
-        
-
-            
-            
   <% end %>       
   </div>                       
         </div>
 
-        <div class="col-md-5">
+        <!-- <div class="col-md-5"> -->
 
           <% if current_user %>
-      <div class="col-md-5" style="margin: 20px;">
+      <div class="col-md-3" style="margin: 20px;">
         <h3>Write a Review for <%= @driver.formatted_name %>:</h3><br> 
         <%= form_for @ride_review, url: user_ride_reviews_path(@user) do |f| %>
           <p><%= f.number_field :star_rating, :placeholder => "Rate your driver", :autofocus => false%></p>
@@ -108,19 +128,7 @@
     
     <div class="col-md-6" style="margin:20px;">
       <h1><%= @driver.formatted_name %></h1>
-      <% if @driver.medallion_number.length == 4 %>
-        <h4>Medallion Number: <%= @driver.medallion_number %></h4><br>
-      <% else %>
-        <h4>License Number: <%= @driver.medallion_number %></h4><br>
-      <% end %>
-      <% if @driver.violations.size > 0 %>
-        <h4>Number of Current Summonses: <%= @driver.violations.count %></h4><br>
-        <% @driver.violations.each do |viol| %>
-            <h5>Date: <%= viol.date %></h5>
-            <h5>Charge: <%= viol.charge %></h5> 
-            <h5>Description: <%= viol.description %></h5> 
-        <% end %>
-      <% end %>
+      
 
 
     </div>
