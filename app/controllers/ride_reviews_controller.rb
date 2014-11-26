@@ -26,7 +26,7 @@ class RideReviewsController < ApplicationController
   private
 
   def ride_review_params
-    params.require(:ride_review).permit(:star_rating, :comments, :driver_id)
+    params.require(:ride_review).permit(:star_rating, :comments, :driver_id, :uber)
   end
 
 end
