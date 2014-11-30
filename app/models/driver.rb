@@ -26,4 +26,20 @@ class Driver < ActiveRecord::Base
   def star_percentage
     ((stars_earned.to_f / stars_possible.to_f) * 125).to_i
   end
+
+  def self.any_violations?
+    Driver.joins(:violations).having('COUNT(driver_id) > 0').group(:driver_id)
+  end  
+
+  def self.highest_rating
+    Driver.joins(:ride_reviews).having('COUNT(driver_id) > 0').group(:driver_id).order('AVG(star_rating) DESC').limit(1).first
+  end  
+
+  def self.lowest_rating
+    Driver.joins(:ride_reviews).having('COUNT(driver_id) > 0').group(:driver_id).order('AVG(star_rating)').limit(1).first
+  end 
+
+  def self.most_violations
+    Driver.joins(:violations).having('COUNT(driver_id) > 0').group(:driver_id).order('count(*) DESC').limit(1).first
+  end  
 end
